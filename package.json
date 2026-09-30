@@ -1,0 +1,22 @@
+{
+  "name": "see-n-say-tech-bro-edition",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc",
+    "validate": "node scripts/validate-catalog.ts",
+    "build:single": "node scripts/build-single-file.ts",
+    "narrator": "node scripts/render-narrator.ts",
+    "voices": "node --env-file-if-exists=.env.local scripts/render-voices.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "espeak-ng": "^1.0.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
+  }
+}

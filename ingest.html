@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Clip Ingest · See ’n Say</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Titan+One&display=swap"
+    />
+  </head>
+  <body class="ingest">
+    <header class="ing-head">
+      <h1>Clip ingest</h1>
+      <p>
+        Turn a real recording into a catalog record. One contiguous cut, exact words, a source anyone can check. The app
+        refuses any clip that fails these checks.
+      </p>
+      <a class="pill" href="./index.html">Back to the toy</a>
+    </header>
+
+    <main class="ing-grid">
+      <section class="panel" aria-labelledby="h-audio">
+        <h2 id="h-audio">1 · Source audio</h2>
+        <p class="help">
+          Load a trimmed piece of the source (under ~10 minutes; long files eat memory). If it doesn't start at 0:00 of
+          the original, say where it starts so the timestamp link lands correctly.
+        </p>
+        <div class="row">
+          <label class="field"><span>Audio file</span><input type="file" id="file" accept="audio/*,video/*" /></label>
+          <label class="field"><span>This file starts at (in the original)</span><input id="file-offset" value="0:00" inputmode="decimal" /></label>
+        </div>
+
+        <div class="marking" role="radiogroup" aria-label="What a drag marks">
+          <span>Drag on the waveform to mark:</span>
+          <label><input type="radio" name="mark" value="context" checked /> Context window (30–60 s)</label>
+          <label><input type="radio" name="mark" value="excerpt" /> Excerpt (the joke)</label>
+          <label><input type="radio" name="mark" value="stage" /> Annihilator stage</label>
+        </div>
+
+        <p class="wave-label">Whole file</p>
+        <canvas id="overview" class="wave" height="90" aria-label="Whole-file waveform"></canvas>
+        <p class="wave-label">Context window, zoomed</p>
+        <canvas id="detail" class="wave wave-detail" height="130" aria-label="Context window waveform"></canvas>
+
+        <div class="times">
+          <label class="field"><span>Context start</span><input id="ctx-start" inputmode="decimal" /></label>
+          <label class="field"><span>Context end</span><input id="ctx-end" inputmode="decimal" /></label>
+          <label class="field"><span>Excerpt start</span><input id="ex-start" inputmode="decimal" /></label>
+          <label class="field"><span>Excerpt end</span><input id="ex-end" inputmode="decimal" /></label>
+        </div>
+        <div class="row buttons">
+          <button type="button" class="toy-btn toy-btn-plain" id="play-context">Play context</button>
+          <button type="button" class="toy-btn toy-btn-primary" id="play-excerpt">Play excerpt</button>
+          <button type="button" class="toy-btn toy-btn-plain" id="stop">Stop</button>
+        </div>
+        <ol class="stages" id="stages"></ol>
+      </section>
+
+      <section class="panel" aria-labelledby="h-meta">
+        <h2 id="h-meta">2 · Who, where, what</h2>
+        <div class="row">
+          <label class="field"><span>Clip id</span><input id="id" placeholder="lowercase-with-dashes" /></label>
+          <label class="field"><span>Category</span><select id="category"></select></label>
+        </div>
+        <div class="row">
+          <label class="field"><span>Speaker</span><input id="speaker" /></label>
+          <label class="field"><span>Company at the time</span><input id="company" /></label>
+        </div>
+        <label class="field"><span>Archetype shown before the reveal</span><input id="archetype" placeholder="THE VISIONARY" /></label>
+        <label class="field"><span>Source URL</span><input id="source-url" type="url" placeholder="https://" /></label>
+        <div class="row">
+          <label class="field"><span>Source title</span><input id="source-title" /></label>
+          <label class="field"><span>Source date</span><input id="source-date" type="date" /></label>
+        </div>
+        <label class="field"><span>Exact transcript of the context window</span><textarea id="transcript" rows="5"></textarea></label>
+        <label class="field"><span>Exact words of the excerpt (must appear in the transcript)</span><textarea id="quote" rows="2"></textarea></label>
+        <label class="field"><span>What they were actually talking about</span><input id="topic" /></label>
+        <div class="row">
+          <label class="field"><span>Decoy topic 1</span><input id="decoy-0" /></label>
+          <label class="field"><span>Decoy topic 2</span><input id="decoy-1" /></label>
+          <label class="field"><span>Decoy topic 3</span><input id="decoy-2" /></label>
+        </div>
+        <div class="row">
+          <label class="field"><span>Absurdity <output id="absurdity-out">70</output></span><input id="absurdity" type="range" min="0" max="100" value="70" /></label>
+          <fieldset class="field checks">
+            <legend>Tags</legend>
+            <label><input type="checkbox" id="tag-earnings" /> Earnings call</label>
+            <label><input type="checkbox" id="tag-open" /> Synergy opener</label>
+            <label><input type="checkbox" id="tag-mid" /> Synergy middle</label>
+            <label><input type="checkbox" id="tag-close" /> Synergy closer</label>
+            <label><input type="checkbox" id="worse" /> Context makes it worse</label>
+          </fieldset>
+        </div>
+        <div class="row">
+          <label class="field"><span>Reviewed by (listened and checked every word)</span><input id="review-by" /></label>
+          <label class="field"><span>Reviewed on</span><input id="review-at" type="date" /></label>
+        </div>
+      </section>
+
+      <section class="panel panel-wide" aria-labelledby="h-out">
+        <h2 id="h-out">3 · Cut and catalog</h2>
+        <div id="checks" class="checks-out" aria-live="polite"></div>
+        <p class="help">Run this from the project folder to cut the context window. The record's times are already relative to that cut.</p>
+        <div class="code-row">
+          <pre id="ffmpeg" class="code"></pre>
+          <button type="button" class="pill" id="copy-ffmpeg">Copy</button>
+        </div>
+        <p class="help">Then add this record to <code>src/catalog/real-clips.json</code> and run <code>npm run validate</code>.</p>
+        <div class="code-row">
+          <pre id="json" class="code"></pre>
+          <button type="button" class="pill" id="copy-json">Copy</button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/ingest/main.ts"></script>
+  </body>
+</html>

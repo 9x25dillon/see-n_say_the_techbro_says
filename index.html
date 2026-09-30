@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>See ’n Say: Tech Bro Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Titan+One&display=swap"
+    />
+  </head>
+  <body>
+    <p class="satire-bar" role="note">
+      <strong>Satire</strong> <span>Quotes intentionally presented without context.</span>
+      <span class="satire-extra">Tap Source for the receipts.</span>
+    </p>
+
+    <main class="stage">
+      <section class="toy" aria-label="See ’n Say: Tech Bro Edition">
+        <header class="toy-top">
+          <h1 class="logo">SEE ’N SAY</h1>
+          <p class="edition"><span>Tech Bro Edition</span></p>
+          <p class="tagline">The tech bro say…</p>
+        </header>
+        <nav class="modes" id="modes" aria-label="Game mode"></nav>
+        <div class="toy-body">
+          <div class="dial" id="dial"></div>
+          <div class="lever-mount" id="lever-mount"></div>
+        </div>
+        <p class="toy-hint" id="toy-hint" aria-live="polite"></p>
+        <p class="toy-print">Ages 18+ · Contains small parts of larger quotes · Valuation not included</p>
+      </section>
+
+      <section class="keynote" id="keynote" aria-live="polite" aria-label="What the founder says">
+        <div class="kn-mode" id="kn-mode"></div>
+        <div class="kn-body" id="kn-body"></div>
+        <div class="kn-actions" id="kn-actions"></div>
+      </section>
+    </main>
+
+    <footer class="fine-print">
+      <p id="catalog-stats"></p>
+      <p>
+        Fictional executives are invented and voiced by speech synthesis. Authentic clips keep the exact words from
+        the original recording: one contiguous cut, never spliced, never voice-cloned, always one tap from the source.
+        Waifu Dub only speeds and pitches the audio up; switch it off to hear the original voice.
+      </p>
+      <p>Parody. Not affiliated with or endorsed by Mattel or Fisher-Price, or by any executive, real or imagined.</p>
+      <div class="controls">
+        <button type="button" class="pill" id="mute" aria-pressed="false">Sound on</button>
+        <button type="button" class="pill" id="dub" aria-pressed="true">Waifu dub on</button>
+        <span id="voice-status"></span>
+        <a class="pill" href="./ingest.html" data-local-only>Clip ingest tool</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

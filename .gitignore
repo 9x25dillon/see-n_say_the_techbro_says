@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.local
+dist-single/
+.voice-previews/
+.env
+.env.local
+.directory

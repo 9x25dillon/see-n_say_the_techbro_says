@@ -1,0 +1,153 @@
+{
+  "model": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "stsModel": "eleven_multilingual_sts_v2",
+  "defaults": {
+    "stability": 0.4,
+    "similarity_boost": 0.75,
+    "style": 0.35,
+    "use_speaker_boost": true,
+    "speed": 1
+  },
+  "voices": {
+    "waifu:tsundere": {
+      "voiceId": "zUJNhm6iIvhvwy6SM3ci",
+      "name": "Tsundere-chan",
+      "design": "Young adult woman in her twenties with a bright, high-pitched anime-style voice. Sharp, huffy and easily flustered; talks fast and sounds annoyed but secretly eager. American English, clean studio recording.",
+      "settings": {
+        "stability": 0.3,
+        "style": 0.55
+      }
+    },
+    "waifu:genki": {
+      "voiceId": "rg58ei0UczWlXhg3SQVj",
+      "name": "Genki-chan",
+      "design": "Young adult woman in her twenties with an extremely energetic, bubbly anime-style voice. High pitch, a huge smile in every word, quick bouncy pacing. American English, clean studio recording.",
+      "settings": {
+        "stability": 0.3,
+        "style": 0.6,
+        "speed": 1.08
+      }
+    },
+    "waifu:kuudere": {
+      "voiceId": "sSwi9HWTz7scUaQzo8Fi",
+      "name": "Kuudere-san",
+      "design": "Adult woman in her late twenties with a cool, flat, nearly emotionless anime-style voice. Mid-high pitch, slow and precise, faintly bored. American English, clean studio recording.",
+      "settings": {
+        "stability": 0.7,
+        "style": 0.1,
+        "speed": 0.95
+      }
+    },
+    "waifu:ojou": {
+      "voiceId": "yRsvRnq8nPu7FWaRvLFP",
+      "name": "Ojou-sama",
+      "design": "Adult woman in her twenties with a haughty, aristocratic anime-style voice, the rich young lady archetype. Elegant, theatrical and condescending, with slow dramatic flourishes. American English, clean studio recording.",
+      "settings": {
+        "stability": 0.35,
+        "style": 0.6
+      }
+    },
+    "waifu:dandere": {
+      "voiceId": "kfkEcuwuVbmqwOHi1nhl",
+      "name": "Dandere-chan",
+      "design": "Young adult woman in her twenties with a very soft, shy, slightly breathy anime-style voice. Gentle and hesitant, quiet but clear. American English, clean studio recording.",
+      "settings": {
+        "stability": 0.5,
+        "style": 0.3,
+        "speed": 0.92
+      }
+    },
+    "waifu:magical": {
+      "voiceId": "1r4ceMl1hOe3bcJAUKme",
+      "name": "Magical Girl Synergy",
+      "design": "Young adult woman in her twenties with a sparkling, heroic magical-girl anime voice. High and bright, dramatic and triumphant, as if announcing a transformation. American English, clean studio recording.",
+      "settings": {
+        "stability": 0.3,
+        "style": 0.7
+      }
+    },
+    "waifu:onee": {
+      "voiceId": "zwd0cv4ZtJdTjeDqsR8K",
+      "name": "Onee-san",
+      "design": "Adult woman in her thirties with a warm, calm, gently teasing big-sister anime-style voice. Smooth mid-low pitch, relaxed and knowing. American English, clean studio recording.",
+      "settings": {
+        "stability": 0.5,
+        "style": 0.35
+      }
+    },
+    "waifu:yandere": {
+      "voiceId": "7dVJgb8qexRfUrtj9xiZ",
+      "name": "Yandere-chan",
+      "design": "Young adult woman in her twenties with a sweet, high anime-style voice that turns quietly unsettling: soft and adoring with a possessive edge. American English, clean studio recording.",
+      "settings": {
+        "stability": 0.35,
+        "style": 0.55
+      }
+    },
+    "exec:moonshot": {
+      "voiceId": "grSdhS6IiVoxRNbFjkuz",
+      "name": "Thane Moonshot (fictional)",
+      "design": "Man in his forties with a slow, grandiose tech-keynote voice. Breathy pauses, speaks as if unveiling the future of humanity. American English, clean studio recording."
+    },
+    "exec:loss": {
+      "voiceId": "uhxtLEI4xIDNCy1311PA",
+      "name": "Dr. Evander Loss (fictional)",
+      "design": "Man in his thirties, soft-spoken, earnest and slightly anxious, a researcher turned CEO who talks calmly about the end of the world. American English, clean studio recording."
+    },
+    "exec:funnel": {
+      "voiceId": "TjMPmLjsVLyVGhweqCiq",
+      "name": "Kyle Funnel (fictional)",
+      "design": "Man in his late twenties, fast-talking and hyper-enthusiastic startup marketer with podcast-host energy. American English, clean studio recording."
+    },
+    "exec:throughput": {
+      "voiceId": "f7881ZGEGpdnplAVdGLv",
+      "name": "Brock Throughput (fictional)",
+      "design": "Man in his forties, clipped, intense, productivity-obsessed executive. Low and fast, no wasted words. American English, clean studio recording."
+    },
+    "exec:ledger": {
+      "voiceId": "97xfnRUw1w7CIozOwAGF",
+      "name": "Dax Ledger (fictional)",
+      "design": "Man in his twenties, laid-back but overconfident founder, casual and a little smug. American English, clean studio recording."
+    },
+    "exec:alderwood": {
+      "voiceId": "VwzUU2vLG4u96IZiwPEw",
+      "name": "Sage Alderwood (fictional)",
+      "design": "Person in their thirties with a soothing, breathy, gender-neutral wellness-app narrator voice. Slow and calm. American English, clean studio recording."
+    },
+    "exec:graph": {
+      "voiceId": "2I2RQZU4I6N5JO7coFIF",
+      "name": "Mercer Graph (fictional)",
+      "design": "Man in his thirties, flat, rehearsed, media-trained executive voice, carefully neutral. American English, clean studio recording."
+    },
+    "exec:accrual": {
+      "voiceId": "DAh7sV2QXu4f2Xol7rXa",
+      "name": "Preston Accrual (fictional)",
+      "design": "Man in his fifties with a smooth, deep, reassuring earnings-call voice, measured and polished. American English, clean studio recording."
+    },
+    "narrator": {
+      "voiceId": "PeuF4YV43cRYgiZ6XIpH",
+      "name": "The Toy",
+      "design": "Adult man speaking slowly in a flat, monotone, mechanical cadence, like the announcer in a vintage talking toy. American English, clean studio recording.",
+      "settings": {
+        "stability": 0.85,
+        "style": 0
+      },
+      "toyEffect": true
+    },
+    "operator": {
+      "voiceId": "y0l5bp0NIsBMjEit06iI",
+      "name": "Conference Operator",
+      "design": "Adult woman with a calm, polite, neutral conference-call operator voice. Crisp and professional. American English, clean studio recording.",
+      "settings": {
+        "stability": 0.8,
+        "style": 0
+      }
+    },
+    "analyst": {
+      "voiceId": "T61vlwxb8omSNqL9AlUS",
+      "name": "Sell-side Analyst",
+      "design": "Man in his thirties, an eager Wall Street analyst on a conference call, quick and slightly nervous. American English, clean studio recording."
+    }
+  }
+}

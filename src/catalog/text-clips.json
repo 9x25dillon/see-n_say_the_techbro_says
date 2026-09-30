@@ -1,0 +1,177 @@
+[
+  {
+    "kind": "text",
+    "id": "receipt-zuck-trust-me",
+    "category": "surveillance",
+    "absurdity": 96,
+    "speaker": "Mark Zuckerberg",
+    "companyAtTime": "TheFacebook (as a Harvard student)",
+    "archetype": "THE DORM-ROOM FOUNDER",
+    "medium": "im",
+    "contextText": "Zuck: Yeah so if you ever need info about anyone at Harvard\nZuck: Just ask.\nZuck: I have over 4,000 emails, pictures, addresses, SNS\n[Redacted Friend's Name]: What? How'd you manage that one?\nZuck: People just submitted it.\nZuck: I don't know why.\nZuck: They \"trust me\"\nZuck: Dumb fucks.",
+    "stages": [
+      "People just submitted it.\nZuck: I don't know why.\nZuck: They \"trust me\"\nZuck: Dumb fucks."
+    ],
+    "quoteExact": "They \"trust me\"\nZuck: Dumb fucks.",
+    "sourceUrl": "https://www.businessinsider.com/well-these-new-zuckerberg-ims-wont-help-facebooks-privacy-problems-2010-5",
+    "archiveUrl": "https://web.archive.org/web/20110101100526/http://www.businessinsider.com/well-these-new-zuckerberg-ims-wont-help-facebooks-privacy-problems-2010-5",
+    "sourceTitle": "Business Insider: “Well, These New Zuckerberg IMs Won't Help Facebook's Privacy Problems”",
+    "sourceDate": "2010-05-13",
+    "saidOn": "early 2004, shortly after TheFacebook launched",
+    "provenanceNote": "Published from unnamed sources. Zuckerberg confirmed the messages in a September 2010 New Yorker profile and said he had matured since.",
+    "topic": "Classmates' personal data on the brand-new TheFacebook, in a 2004 IM with a friend",
+    "decoyTopics": [
+      "A Harvard email outage",
+      "Customer-support tickets",
+      "A dorm-room poker game"
+    ],
+    "contextMakesItWorse": true,
+    "review": {
+      "by": "",
+      "at": ""
+    }
+  },
+  {
+    "kind": "text",
+    "id": "receipt-zuck-move-fast",
+    "category": "efficiency",
+    "absurdity": 58,
+    "speaker": "Mark Zuckerberg",
+    "companyAtTime": "Facebook",
+    "archetype": "THE HACKER WAY",
+    "medium": "filing",
+    "contextText": "Moving fast enables us to build more things and learn faster. However, as most companies grow, they slow down too much because they’re more afraid of making mistakes than they are of losing opportunities by moving too slowly. We have a saying: “Move fast and break things.” The idea is that if you never break anything, you’re probably not moving fast enough.",
+    "stages": [
+      "We have a saying: “Move fast and break things.”"
+    ],
+    "quoteExact": "Move fast and break things.",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1326801/000119312512034517/d287954ds1.htm",
+    "sourceTitle": "Facebook, Inc. Form S-1, “Letter from Mark Zuckerberg” (The Hacker Way, p. 69)",
+    "sourceDate": "2012-02-01",
+    "topic": "Facebook's company values, in the founder letter of its IPO filing",
+    "decoyTopics": [
+      "A demolition company's pitch deck",
+      "Advice for new drivers",
+      "A toddler-proofing guide"
+    ],
+    "review": {
+      "by": "",
+      "at": ""
+    }
+  },
+  {
+    "kind": "text",
+    "id": "receipt-tesla-technoking",
+    "category": "shareholder-value",
+    "absurdity": 88,
+    "speaker": "Tesla, Inc.",
+    "companyAtTime": "Tesla",
+    "archetype": "THE REGULATORY FILING",
+    "medium": "filing",
+    "contextText": "Effective as of March 15, 2021, the titles of Elon Musk and Zach Kirkhorn have changed to Technoking of Tesla and Master of Coin, respectively. Elon and Zach will also maintain their respective positions as Chief Executive Officer and Chief Financial Officer.",
+    "stages": [
+      "the titles of Elon Musk and Zach Kirkhorn have changed to Technoking of Tesla and Master of Coin"
+    ],
+    "quoteExact": "Technoking of Tesla and Master of Coin",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1318605/000156459021012981/tsla-8k_20210315.htm",
+    "sourceTitle": "Tesla, Inc. Form 8-K, Item 8.01 (Other Events)",
+    "sourceDate": "2021-03-15",
+    "topic": "Executive job titles, in an official filing with the SEC",
+    "decoyTopics": [
+      "A fantasy-novel cast list",
+      "A Renaissance faire lineup",
+      "A video game's character-select screen"
+    ],
+    "contextMakesItWorse": true,
+    "review": {
+      "by": "",
+      "at": ""
+    }
+  },
+  {
+    "kind": "text",
+    "id": "receipt-musk-nukes",
+    "category": "agi-doom",
+    "absurdity": 70,
+    "speaker": "Elon Musk",
+    "companyAtTime": "Tesla and SpaceX",
+    "archetype": "THE SERIAL FOUNDER",
+    "medium": "tweet",
+    "handle": "@elonmusk",
+    "contextText": "Worth reading Superintelligence by Bostrom. We need to be super careful with AI. Potentially more dangerous than nukes.",
+    "stages": [
+      "We need to be super careful with AI. Potentially more dangerous than nukes."
+    ],
+    "quoteExact": "Potentially more dangerous than nukes.",
+    "sourceUrl": "https://twitter.com/elonmusk/status/495759307346952192",
+    "archiveUrl": "https://web.archive.org/web/20140805042653/https://twitter.com/elonmusk/status/495759307346952192",
+    "sourceTitle": "Post by @elonmusk",
+    "sourceDate": "2014-08-02",
+    "topic": "Recommending Nick Bostrom's book Superintelligence",
+    "decoyTopics": [
+      "A new Tesla feature",
+      "A flamethrower launch",
+      "A spicy-food challenge"
+    ],
+    "review": {
+      "by": "",
+      "at": ""
+    }
+  },
+  {
+    "kind": "text",
+    "id": "receipt-sutskever-conscious",
+    "category": "ai",
+    "absurdity": 76,
+    "speaker": "Ilya Sutskever",
+    "companyAtTime": "OpenAI",
+    "archetype": "THE CHIEF SCIENTIST",
+    "medium": "tweet",
+    "handle": "@ilyasut",
+    "contextText": "it may be that today's large neural networks are slightly conscious",
+    "quoteExact": "today's large neural networks are slightly conscious",
+    "sourceUrl": "https://twitter.com/ilyasut/status/1491554478243258368",
+    "archiveUrl": "https://web.archive.org/web/20220213103651/https://twitter.com/ilyasut/status/1491554478243258368",
+    "sourceTitle": "Post by @ilyasut",
+    "sourceDate": "2022-02-09",
+    "topic": "Whether AI might be conscious, hedged with “it may be that”",
+    "decoyTopics": [
+      "An all-hands meeting",
+      "A new sleep tracker",
+      "A lab's coffee machine"
+    ],
+    "review": {
+      "by": "",
+      "at": ""
+    }
+  },
+  {
+    "kind": "text",
+    "id": "receipt-altman-event-horizon",
+    "category": "future",
+    "absurdity": 72,
+    "speaker": "Sam Altman",
+    "companyAtTime": "OpenAI",
+    "archetype": "THE AGI CEO",
+    "medium": "blog",
+    "contextText": "We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence, and at least so far it’s much less weird than it seems like it should be.",
+    "stages": [
+      "We are past the event horizon; the takeoff has started. Humanity is close to building digital superintelligence"
+    ],
+    "quoteExact": "We are past the event horizon; the takeoff has started.",
+    "sourceUrl": "https://blog.samaltman.com/the-gentle-singularity",
+    "archiveUrl": "https://web.archive.org/web/20250615171004/https://blog.samaltman.com/the-gentle-singularity",
+    "sourceTitle": "“The Gentle Singularity” (blog post)",
+    "sourceDate": "2025-06-10",
+    "topic": "The opening lines of his essay “The Gentle Singularity”",
+    "decoyTopics": [
+      "A rocket launch",
+      "A black-hole documentary",
+      "An airline delay"
+    ],
+    "review": {
+      "by": "",
+      "at": ""
+    }
+  }
+]

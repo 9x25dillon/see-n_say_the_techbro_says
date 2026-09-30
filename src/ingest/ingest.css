@@ -1,0 +1,259 @@
+/* Ingest tool: a plain two-column workbench on the keynote palette. */
+.ingest {
+  padding-block: 24px 48px;
+}
+
+.ing-head {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 20px;
+}
+
+.ing-head h1 {
+  margin: 0;
+  font-family: var(--font-lux);
+  font-style: italic;
+  font-size: 2.2rem;
+  color: var(--gold-1);
+}
+
+.ing-head p {
+  flex: 1 1 30rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--t-sm);
+}
+
+.ing-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .ing-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--slide-line);
+  border-radius: 18px;
+  background: var(--slide);
+}
+
+.panel-wide {
+  grid-column: 1 / -1;
+}
+
+.panel h2 {
+  margin: 0;
+  font-family: var(--font-toy);
+  font-weight: 400;
+  font-size: var(--t-lg);
+  letter-spacing: 0.03em;
+}
+
+.help {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--t-sm);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.row > * {
+  flex: 1 1 12rem;
+}
+
+.buttons > * {
+  flex: 0 0 auto;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  font-size: var(--t-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.field input,
+.field select,
+.field textarea,
+.stages input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--slide-line);
+  border-radius: 8px;
+  background: var(--slide-raise);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: var(--t-sm);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.field input[type="range"] {
+  padding: 0;
+  accent-color: var(--lever);
+}
+
+.checks {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--slide-line);
+  border-radius: 8px;
+}
+
+.checks legend {
+  padding: 0 4px;
+}
+
+.checks label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--text);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: var(--t-sm);
+}
+
+.marking {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: var(--t-sm);
+}
+
+.marking label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.wave-label {
+  margin: 4px 0 -6px;
+  font-size: var(--t-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.wave {
+  display: block;
+  width: 100%;
+  height: 90px;
+  border-radius: 10px;
+  border: 1px solid var(--slide-line);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.wave-detail {
+  height: 130px;
+}
+
+.times {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 560px) {
+  .times {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.stages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.stages li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+}
+
+.stages input {
+  flex: 1 1 14rem;
+}
+
+.stage-time {
+  font-size: var(--t-xs);
+  font-variant-numeric: tabular-nums;
+  color: var(--gold-1);
+}
+
+.checks-out p {
+  margin: 0;
+}
+
+.checks-out ul {
+  margin: 6px 0 0;
+  padding-left: 1.2rem;
+  font-size: var(--t-sm);
+}
+
+.checks-out .bad {
+  color: var(--critical);
+}
+
+.checks-out .good {
+  color: var(--ok);
+}
+
+.checks-out .warn {
+  color: var(--warning);
+}
+
+.code-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.code {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 12px 14px;
+  overflow-x: auto;
+  border-radius: 10px;
+  background: var(--slide-raise);
+  border: 1px solid var(--slide-line);
+  font-size: var(--t-sm);
+  line-height: 1.5;
+  max-height: 24rem;
+}
+
+code {
+  color: var(--gold-1);
+}
