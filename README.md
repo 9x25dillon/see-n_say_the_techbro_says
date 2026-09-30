@@ -98,7 +98,7 @@ everything except review show up in `npm run dev`, stamped **Unreviewed**, and a
 production build, along with their rendered audio (`scripts/vite-reviewed-only.ts`). To approve one, open its source and archive, check every character, then fill in
 `review.by` and `review.at`.
 
-Six receipts are in the catalog, awaiting review. Their text was pulled from the sources below:
+Six receipts are live, reviewed by Randy on 2026-09-29. Their text was pulled from the sources below:
 
 | Receipt | Source |
 |---|---|

@@ -64,16 +64,16 @@ The notes below are my best recollection as of this writing. They are leads to c
 ## Text only (now receipts)
 
 These can't be audio clips, so they're **receipts** in `src/catalog/text-clips.json`, with verbatim text
-pulled from the original or an archived copy. They're awaiting your review (see the README).
+pulled from the original or an archived copy. All six were reviewed by Randy on 2026-09-29.
 
 | Speaker | Quote | Original form | Status |
 |---|---|---|---|
-| Mark Zuckerberg | They "trust me" / Dumb fucks. | 2004 IMs, published by Business Insider in 2010; Zuckerberg confirmed them to The New Yorker | Receipt, awaiting review |
-| Mark Zuckerberg | "Move fast and break things." | Founder letter in Facebook's 2012 S-1 (SEC EDGAR) | Receipt, awaiting review |
-| Tesla, Inc. | "Technoking of Tesla and Master of Coin" | Tesla 8-K, 2021 (SEC EDGAR). The title comes from the company's filing, not something Musk said aloud. | Receipt, awaiting review |
-| Elon Musk | "Potentially more dangerous than nukes." | Tweet, Aug 2 2014 | Receipt, awaiting review |
-| Sam Altman | "We are past the event horizon; the takeoff has started." | Blog post, Jun 10 2025 | Receipt, awaiting review |
-| Ilya Sutskever | "it may be that today's large neural networks are slightly conscious" | Tweet, Feb 9 2022. The excerpt drops "it may be that", which is the joke. | Receipt, awaiting review |
+| Mark Zuckerberg | They "trust me" / Dumb fucks. | 2004 IMs, published by Business Insider in 2010; Zuckerberg confirmed them to The New Yorker | Receipt, reviewed |
+| Mark Zuckerberg | "Move fast and break things." | Founder letter in Facebook's 2012 S-1 (SEC EDGAR) | Receipt, reviewed |
+| Tesla, Inc. | "Technoking of Tesla and Master of Coin" | Tesla 8-K, 2021 (SEC EDGAR). The title comes from the company's filing, not something Musk said aloud. | Receipt, reviewed |
+| Elon Musk | "Potentially more dangerous than nukes." | Tweet, Aug 2 2014 | Receipt, reviewed |
+| Sam Altman | "We are past the event horizon; the takeoff has started." | Blog post, Jun 10 2025 | Receipt, reviewed |
+| Ilya Sutskever | "it may be that today's large neural networks are slightly conscious" | Tweet, Feb 9 2022. The excerpt drops "it may be that", which is the joke. | Receipt, reviewed |
 
 Still text-only and not added, because I couldn't find a primary source: Bezos's "Your margin is my
 opportunity" and Musk's "Context switching is the mind-killer". Find the original post or interview
